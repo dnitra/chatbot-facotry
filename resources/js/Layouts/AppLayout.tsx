@@ -10,6 +10,7 @@ import Dropdown from '@/Components/Dropdown';
 import DropdownLink from '@/Components/DropdownLink';
 import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
+
 import { Team } from '@/types';
 
 interface Props {
@@ -71,6 +72,12 @@ export default function AppLayout({
                     active={route().current('dashboard')}
                   >
                     Dashboard
+                  </NavLink>
+                  <NavLink
+                    href={route('chatbot.create')}
+                    active={route().current('chatbot.create')}
+                  >
+                    Create ChatBot
                   </NavLink>
                 </div>
               </div>
